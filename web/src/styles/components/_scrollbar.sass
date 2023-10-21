@@ -1,0 +1,30 @@
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar
+    width: 0
+    background: transparent
+
+.scrollbar
+    position: fixed
+    top: 0
+    right: 0
+    width: 10px
+    height: 100vh
+    background: white
+    z-index: 2
+
+    .thumb
+        position: absolute
+        top: 0
+        right: 0
+        width: 10px
+        height: 100vh
+        background: #000000
+        opacity: 0.5
+        border-radius: 10px
+        transition: opacity 0.5s ease-in-out
+
+        &:hover
+            opacity: 1
+
+        &.active
+            opacity: 1

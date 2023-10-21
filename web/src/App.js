@@ -1,16 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 
-import Event from './components/Event';
 import Header from './components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
 
+import CustomScrollbar from './components/Scrollbar';
+
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Home />
-      <About />
+      {/* <CustomScrollbar> */}
+        <Header />
+        <Home />
+        <About />
+      {/* </CustomScrollbar> */}
     </div>
   );
 }
