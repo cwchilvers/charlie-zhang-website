@@ -1,7 +1,7 @@
 @import '../utils/_colors'
 
 header
-    background-color: #090808cb
+    background-color: #090808a7
     height: 130px
     width: 100vw
     position: fixed
@@ -9,7 +9,7 @@ header
     justify-content: space-between
     align-items: center
     user-select: none
-    z-index: 1
+    z-index: 2
     padding: 0 5%
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.774)
     backdrop-filter: blur(15px) brightness(.9)
@@ -22,15 +22,15 @@ header
         width: 0vw
         height: 2px
         background-color: #644609
-        z-index: -2
+        z-index: 3
         transition: all 0.3s ease
 
     &:hover
-        background-color: #090808db
-        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.87)
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.918)
 
         .underline-header
             width: 100vw
+
     .logo
         display: flex
         flex-direction: column
