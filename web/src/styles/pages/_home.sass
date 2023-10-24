@@ -1,0 +1,45 @@
+@import "../utils/_colors"
+
+.home::after
+    content: ""
+    position: absolute
+    bottom: 0px
+    width: 100vw
+    height: 200px
+    background: linear-gradient(0deg, #0f0e0eb7, #0f0e0e46, rgba(15, 14, 14, 0))
+    z-index: -1
+
+.home
+    .content
+        height: calc(100vh - 100px)
+        width: 100vw
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        position: fixed
+        bottom: 0
+        transform: translate3d(0, 0, 0)
+        z-index: 5
+
+        h1
+            color: $color-white
+            font-size: 50px
+            letter-spacing: 5px
+            text-shadow: 0 0 12px rgb(0, 0, 0)
+            margin: 0
+            cursor: pointer
+            padding: 10px 10px 10px 12px
+            border: 1px solid rgba(0, 0, 0, 0)
+            transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out, opacity 1s ease-in-out, filter 2s ease-in-out
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0)
+            opacity: 0
+            filter: blur(20px)
+
+            &.show
+                opacity: 1
+                filter: blur(0px)
+
+            &:hover
+                border: 2px solid $color-white
+                box-shadow: 0 0 12px rgb(0, 0, 0)
